@@ -1,0 +1,31 @@
+<DOCTYPE! html>
+<head>
+	<title>Javascript Random Number</title>
+</head>
+<body>
+<center><h1>JS Random Numbers</h1></center>
+<br />
+<button onclick="randInt()">Get a Random Number</button>
+<p id="randInt1"></p>
+<br />
+<button onclick="randWhole()">Number 1-10</button>
+<p id="randInt2"></p>
+
+<script>
+//Random numbers can be generated with the random() method
+
+//syntax => Math.random()
+
+function randInt() {
+	document.getElementById("randInt1").innerHTML = Math.random(); //returns a number betwen 0 and 1
+}
+
+//for a whole number or to set parameters do this
+function randWhole() {
+	var num = Math.floor(Math.random() * 11); //.floor rounds the number down
+	document.getElementById("randInt2").innerHTML = num;
+}
+
+</script>
+</body>
+</html>
